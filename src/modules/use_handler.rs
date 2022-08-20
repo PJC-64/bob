@@ -66,7 +66,7 @@ async fn link_version(version: &str, config: &Config) -> Result<()> {
         } else {
             use std::os::unix::fs::symlink;
             let folder_name = if cfg!(target_os = "macos") {
-                "nvim-osx64"
+                "nvim-macos"
             } else {
                 "nvim-linux64"
             };

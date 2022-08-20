@@ -130,7 +130,7 @@ fn expand(downloaded_file: DownloadedVersion) -> Result<()> {
         downloaded_file.path, downloaded_file.file_name
     ));
     let platform = if cfg!(target_os = "macos") {
-        "nvim-osx64"
+        "nvim-macos"
     } else {
         "nvim-linux64"
     };
